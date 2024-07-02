@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--
+    width=device-width: 뷰포트의 너비를 디바이스의 너비에 맞춘다는 뜻
+    예를 들어, 스마트폰에서 웹페이지를 볼 때, 뷰포트의 너비가 스마트폰 화면의 너비와 동일하게 설정
+    이는 웹페이지가 모든 디바이스에서 적절하게 스케일링되도록 합니다
+    initial-scale=1.0: 초기 스케일 값을 1로 설정합니다
+    즉, 웹페이지가 처음 로드될 때의 확대/축소 비율을 100%로 설정합니다
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+    <!-- 파비콘 링크 -->
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20190927/ourmid/pngtree-shopping-cart-icon-png-image_1736148.jpg" type="image/x-icon">
+    <!-- 외부 스타일시트 링크 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- 로고 영역 -->
+            <div class="logo">Dongheon Ha</div>
+            <!-- 네비게이션 링크 목록 -->
+            <ul class="nav-links">
+                <li><a href="#">홈</a></li>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Hero 섹션: 주목을 끄는 큰 배너 -->
+        <section class="hero">
+            <h1>Welcome to MyShop</h1>
+            <p>편하게 둘러보시고 연락 주세요</p>
+            <!-- CTA(Call to Action) 버튼 -->
+            <a href="#" class="cta-button">Shop Now</a>
+        </section>
+        
+        <!-- 상품 섹션 -->
+        <section class="products">
+            <h2>주요 상품</h2>
+            <div class="product-list">
+                <!-- 각 상품 항목 -->
+                <div class="product-item">
+                    <!-- 이미지: Base64로 인코딩된 이미지 데이터 -->
+                    <img src="data:image/jpeg;base64,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" alt="2019 i5 그램">
+                    <h3>2019 i5 그램</h3>
+                    <p>$400.00</p>
+                </div>
+                <div class="product-item">
+                    <!-- 이미지: 외부 URL 이미지 -->
+                    <img src="https://gdimg.gmarket.co.kr/2829714355/still/400?ver=1678182984" alt="에어팟 오른쪽만">
+                    <h3>에어팟 오른쪽만</h3>
+                    <p>$30.00</p>
+                </div>
+                <div class="product-item">
+                    <!-- 이미지: 외부 URL 이미지 -->
+                    <img src="https://www.mantech.co.kr/wp-content/uploads/2021/10/product-img-1024x1024.png" alt="맨텍솔루션">
+                    <h3>맨텍솔루션</h3>
+                    <p>$250.00</p>
+                </div>
+                <div class="product-item">
+                    <!-- 이미지: 외부 URL 이미지 -->
+                    <img src="https://img.danawa.com/prod_img/500000/439/205/img/8205439_1.jpg?_v=20190620144220" alt="180cm x 90cm 테이블">
+                    <h3>180cm x 90cm 테이블</h3>
+                    <p>$40.00</p>
+                </div>
+                <!-- 모달 창 구조 -->
+                <div id="contact-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <!-- &time: 일반적으로 "닫기" 버튼에서 사용되는 'x'기호 -->
+                        <h2>Contact Information</h2>
+                        <p>Phone: +82 10-5788-9654</p>
+                        <p>Email: dhha1515@gmail.com</p>
+                        <p>Instagram: @hi_dong_heon</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 MyShop Dongheon Ha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // 모달 창 관련 변수
+        var modal = document.getElementById("contact-modal");
+        var closeButton = document.getElementsByClassName("close-button")[0];
+    
+        // 각 상품 아이템에 클릭 이벤트 추가
+        document.querySelectorAll('.product-item').forEach(function(item) {
+            item.addEventListener('click', function() {
+                modal.style.display = "block";
+            });
+        });
+    
+        // 모달 창 닫기 버튼 클릭 이벤트 추가
+        closeButton.addEventListener('click', function() {
+            modal.style.display = "none";
+        });
+    
+        // 모달 창 외부 클릭 시 닫기
+        window.addEventListener('click', function(event) {
+            // 이 코드의 역할은 페이지 어디든 클릭했을 때 
+            // 그 클릭된 요소가 모달 창 자체인 경우(즉, 모달 창의 빈 부분을 클릭한 경우), 모달 창을 닫도록 하는 것
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
